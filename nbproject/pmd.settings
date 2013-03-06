@@ -1,0 +1,14 @@
+LooseCoupling
+DontImportSun
+SystemPrintln
+ShortVariable
+ConfusingTernary
+AvoidFieldNameMatchingTypeName
+SingularField
+CallSuperInConstructor
+SwitchStmtsShouldHaveDefault
+AbstractNaming
+BeanMembersShouldSerialize
+OnlyOneReturn
+AvoidFieldNameMatchingMethodName
+UncommentedEmptyMethod
