@@ -10,7 +10,6 @@ import uds.infiniquest.display.*;
 import uds.infiniquest.display.holder.*;
 import uds.infiniquest.entity.*;
 import uds.infiniquest.entity.Human.Gender;
-import uds.infiniquest.handler.*;
 import uds.infiniquest.menu.*;
 import uds.infiniquest.settings.AudioSettings.AudioSetting;
 import uds.infiniquest.settings.GameplaySettings.GameplaySetting;
@@ -22,7 +21,7 @@ import uds.infiniquest.world.*;
  *
  * @author UndeadScythes
  */
-public final class InfiniQuest {
+public class InfiniQuest {
     private final static String NAME = "InfiniQuest";
     private final static String VERSION = "Dev 3.1.1";
     private final static int MIN_WIDTH = 640;
@@ -36,8 +35,6 @@ public final class InfiniQuest {
     private static Timer displayTimer;
     private static Timer clockTimer ;
     private static JFrame frame;
-
-    private InfiniQuest() {}
 
     public static void main(final String[] args) throws FileNotFoundException, IOException {
         frame = new JFrame(NAME + " - Version " + VERSION);
@@ -117,4 +114,6 @@ public final class InfiniQuest {
         clockTimer.stop();
         music.stop();
     }
+
+    private InfiniQuest() {}
 }
