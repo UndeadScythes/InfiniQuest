@@ -170,3 +170,10 @@ nbproject/
 build.xml
 manifest.mf
 lib/
+
+#############
+## Config Files
+#############
+
+*.cfg
+
