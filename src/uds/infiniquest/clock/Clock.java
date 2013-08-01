@@ -25,19 +25,17 @@ public class Clock implements ActionListener {
     }
 
     public static void addProcess(final GameProcess g) {
-        System.out.println("Adding process " + g.getClass().getSimpleName() + " - (" + PROCESSES.size() + ")");
         PROCESSES.add(g);
+        System.out.println("Adding process " + g.getClass().getSimpleName() + " - (" + PROCESSES.size() + ")");
     }
 
     public static void removeProcess(final GameProcess g) {
-        System.out.println("Removing process " + g.getClass().getSimpleName() + " - (" + PROCESSES.size() + ")");
         PROCESSES.remove(g);
+        System.out.println("Removing process " + g.getClass().getSimpleName() + " - (" + PROCESSES.size() + ")");
     }
 
     public static void clear() {
-        for(GameProcess g : PROCESSES) {
-            System.out.println("Removing process " + g.getClass().getSimpleName() + " - (" + PROCESSES.size() + ")");
-        }
+        System.out.println("Clearing processes");
         PROCESSES.clear();
     }
 }

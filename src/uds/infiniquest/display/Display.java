@@ -68,33 +68,29 @@ public class Display extends JComponent implements ActionListener, KeyListener {
     }
 
     public static void addLayer(final Layer l) {
-        System.out.println("Adding layer " + l.getClass().getSimpleName() + " - (" + LAYERS.size() + ")");
         LAYERS.add(l);
+        System.out.println("Adding layer " + l.getClass().getSimpleName() + " - (" + LAYERS.size() + ")");
     }
 
     public static void addHandler(final Handler h) {
-        System.out.println("Adding handler " + h.getClass().getSimpleName() + " - (" + HANDLERS.size() + ")");
         HANDLERS.add(h);
+        System.out.println("Adding handler " + h.getClass().getSimpleName() + " - (" + HANDLERS.size() + ")");
     }
 
     public static void removeLayer(final Layer l) {
-        System.out.println("Removing layer " + l.getClass().getSimpleName() + " - (" + LAYERS.size() + ")");
         LAYERS.remove(l);
+        System.out.println("Removing layer " + l.getClass().getSimpleName() + " - (" + LAYERS.size() + ")");
     }
 
     public static void removeHandler(final Handler h) {
-        System.out.println("Removing handler " + h.getClass().getSimpleName() + " - (" + HANDLERS.size() + ")");
         HANDLERS.remove(h);
+        System.out.println("Removing handler " + h.getClass().getSimpleName() + " - (" + HANDLERS.size() + ")");
     }
 
     public static void clear() {
-        for(Layer l : LAYERS) {
-            System.out.println("Removing layer " + l.getClass().getSimpleName() + " - (" + LAYERS.size() + ")");
-        }
+        System.out.println("Clearing layers");
         LAYERS.clear();
-        for(Handler h : HANDLERS) {
-            System.out.println("Removing handler " + h.getClass().getSimpleName() + " - (" + HANDLERS.size() + ")");
-        }
+        System.out.println("Clearing handlers");
         HANDLERS.clear();
     }
 }
